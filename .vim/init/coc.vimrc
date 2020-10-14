@@ -1,3 +1,14 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Custom settings
+"
+" Change linting popup boxes (also Warning and Info floats)
+highlight CocErrorFloat guifg=BLUE guibg=RED
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Example vim configuration from project README
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -144,6 +155,3 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
-" Change linting popup boxes (also Warning and Info floats)
-highlight CocErrorFloat guifg=BLUE guibg=RED
