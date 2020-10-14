@@ -50,7 +50,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'skanehira/docker.vim'
 
     " Tmux
-    " Plug 'christoomey/vim-tmux-navigator'
+    Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 

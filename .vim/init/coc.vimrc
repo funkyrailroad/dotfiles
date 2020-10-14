@@ -1,6 +1,7 @@
 " TextEdit might fail if hidden is not set.
 set hidden
 
+
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
@@ -28,11 +29,11 @@ inoremap <silent><expr> <TAB>
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
 
-" function! s:check_back_space() abort
-"   let col = col('.') - 1
-"   return !col || getline('.')[col - 1]  =~# '\s'
-" endfunction
 
 " Use <c-space> to trigger completion.
 " if has('nvim')
