@@ -4,6 +4,7 @@
 DOTFILES_DIR=/lake/new-home/jatwell/dotfiles
 
 FILES=(
+       .gitconfig
        .tmux.conf
        .vimrc
        .vim
