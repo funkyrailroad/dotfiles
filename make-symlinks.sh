@@ -1,7 +1,7 @@
 #! /bin/bash
 
-# assumes 
-DOTFILES_DIR=/lake/new-home/jatwell/dotfiles
+# script needs to be run from current directory
+DOTFILES_DIR=$(pwd)
 
 FILES=(
        .gitconfig

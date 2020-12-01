@@ -1,4 +1,4 @@
-Set DOTFILES_DIR according in make-symlinks.sh then run it.
+Run make-symlinks.sh from the directory it's in.
 
 For each new config file, it should be added to FILES in make-symlinks.sh
 
