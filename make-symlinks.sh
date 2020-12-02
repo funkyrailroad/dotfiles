@@ -4,7 +4,10 @@
 DOTFILES_DIR=$(pwd)
 
 FILES=(
+       .bashrc
        .gitconfig
+       .keepers
+       .terminal-config
        .tmux.conf
        .vimrc
        .vim
