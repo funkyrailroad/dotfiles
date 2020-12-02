@@ -129,11 +129,13 @@ fi
 # OS specific preferences
 ###########################
 
+setxkbmap -option ctrl:nocaps
+
+# NONE OF THIS IS BEING ACTIVATED!
 # Linux
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	# turn off bell completely
 	xset b off
-	setxkbmap -option "caps:swapescape"
 	#setxkbmap -layout us,de
 	setxkbmap -layout us
 	setxkbmap -option 'grp:ctrl_alt_toggle'
