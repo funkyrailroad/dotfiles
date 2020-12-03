@@ -1,22 +1,3 @@
-syntax on
-set noerrorbells
-set tabstop=4 softtabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
-set number
-set nowrap
-set smartcase
-set nobackup
-set undodir=~/.vim/undodir
-set undofile
-set incsearch
-
-"set colorcolumn=90
-"highlight ColorColumn ctermbg=0 guibg=lightgrey
-
-
-
 call plug#begin('~/.vim/plugged')
 
     " Conquer of Completion
