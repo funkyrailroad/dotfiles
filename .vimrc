@@ -15,6 +15,8 @@ set incsearch
 "set colorcolumn=90
 "highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+
+
 call plug#begin('~/.vim/plugged')
 
     " Conquer of Completion
@@ -51,6 +53,9 @@ call plug#begin('~/.vim/plugged')
 
     " Tmux
     Plug 'christoomey/vim-tmux-navigator'
+
+    " Vimwiki
+    Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -133,3 +138,4 @@ source $HOME/.vim/init/coc.vimrc
 source $HOME/.vim/init/vim-airline.vimrc
 source $HOME/.vim/init/vim-rainbow.vimrc
 source $HOME/.vim/init/docker.vim.vimrc
+source $HOME/.vim/init/vimwiki.vimrc
