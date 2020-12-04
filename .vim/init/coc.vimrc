@@ -3,6 +3,7 @@
 "
 " Change linting popup boxes (also Warning and Info floats)
 highlight CocErrorFloat guifg=BLUE guibg=RED
+highlight CocFloating guifg=BLUE guibg=RED
 
 
 
