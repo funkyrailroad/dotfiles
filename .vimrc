@@ -115,8 +115,8 @@ colorscheme desert
 " set background=dark
 
 source $HOME/.vim/init/general.vimrc
-source $HOME/.vim/init/coc.vimrc
 source $HOME/.vim/init/vim-airline.vimrc
 source $HOME/.vim/init/vim-rainbow.vimrc
 source $HOME/.vim/init/docker.vim.vimrc
 source $HOME/.vim/init/vimwiki.vimrc
+source $HOME/.vim/init/coc.vimrc  " moved to be last, vimiwiki interferes with pop up window color definitions
