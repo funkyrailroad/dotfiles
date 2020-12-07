@@ -581,3 +581,57 @@ watch -n 0.5 nvidia-smi
 
 # rename a file with a pattern that starts with a hyphen
 rename.ul -- '-pc-gt' '' *xml
+
+# install vimplugged
+# install node first
+curl -s https://install-node.now.sh | sudo bash -s --
+# then vimplug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# then unfog
+curl -sSL https://raw.githubusercontent.com/soywod/unfog/master/bin/install.sh | bash
+:PlugInstall
+:CocInstall coc-pyright coc-sh coc-json
+:CocCommand  # has a set interpreter option
+# choose a linter
+# ? how to delete that linter and reset it?
+
+# disable git gutter
+:GitGutterBufferDisable
+
+# tmux
+# help
+<C-b>?
+
+# tmux split pane horizontally
+<C-b> "
+
+# tmux split pane vertically
+<C-b> %
+
+# tmux close current pane
+<C-b> x
+
+# tmux resize panes
+PREFIX : resize-pane -D (Resizes the current pane down)
+PREFIX : resize-pane -U (Resizes the current pane upward)
+PREFIX : resize-pane -L (Resizes the current pane left)
+PREFIX : resize-pane -R (Resizes the current pane right)
+PREFIX : resize-pane -D 20 (Resizes the current pane down by 20 cells)
+PREFIX : resize-pane -U 20 (Resizes the current pane upward by 20 cells)
+PREFIX : resize-pane -L 20 (Resizes the current pane left by 20 cells)
+PREFIX : resize-pane -R 20 (Resizes the current pane right by 20 cells)
+PREFIX : resize-pane -t 2 20 (Resizes the pane with the id of 2 down by 20 cells)
+PREFIX : resize-pane -t -L 20 (Resizes the pane with the id of 2 left by 20 cells)
+
+# tmux rename session
+tmux rename-session [-t session-name] [new-session-name]
+
+# tmux rename window
+<C-b> ,
+
+# tmux restore sessions after reboot
+# https://leimao.github.io/blog/Tmux-Tutorial/#:~:text=Create%2FClose%20Windows&text=To%20create%20a%20window%2C%20in,hitting%20Ctrl%20%2B%20b%20%2B%20%2C%20.
+# plugin manager
+# https://github.com/tmux-plugins/tpm
+# https://github.com/tmux-plugins/tmux-resurrect
