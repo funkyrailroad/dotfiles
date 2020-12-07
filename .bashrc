@@ -260,3 +260,9 @@ unset __conda_setup
 
 # don't activate conda automatically
 # conda config --set auto_activate_base false
+
+# Jump to workspace if opening up from home directory
+if [ $(pwd) == $HOME ]
+then
+    cd Workspace
+fi
