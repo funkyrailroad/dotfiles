@@ -42,3 +42,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 set splitbelow
 set splitright
+
+" TODO: change path and get this functional
+" append selected text to a collection file
+vnoremap <leader>gd "zy:call writefile(getreg('z',1,1),"/home/stic/.keepers/GTD/capture", "a")<cr>
+
+" TODO: need to set global and local leaders
