@@ -635,3 +635,6 @@ tmux rename-session [-t session-name] [new-session-name]
 # plugin manager
 # https://github.com/tmux-plugins/tpm
 # https://github.com/tmux-plugins/tmux-resurrect
+
+# tmux jump between two last windows
+<C-b> l
