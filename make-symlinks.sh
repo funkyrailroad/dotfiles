@@ -5,6 +5,8 @@ DOTFILES_DIR=$(pwd)
 
 FILES=(
        .bashrc
+       .bash_completion
+       .bash_completion.d
        .gitconfig
        .keepers
        .terminal-config
