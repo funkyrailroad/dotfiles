@@ -19,8 +19,9 @@ set incsearch
 " delays and poor user experience.
 set updatetime=100
 
-" bash-like tab completion
-set wildmode=longest,list 
+" bash-like tab completion with ability to cycle on second tab
+" https://vi.stackexchange.com/a/657
+set wildmode=list:longest,full
 
 " no double spacing after .!? when reformatting
 set nojoinspaces
