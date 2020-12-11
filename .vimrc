@@ -1,7 +1,13 @@
 call plug#begin('~/.vim/plugged')
 
+    " Fuzzy finder
+    Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
+    Plug 'junegunn/fzf.vim' " needed for previews
+
     " Conquer of Completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Fuzzy finder in coc
+    Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
     " Status bar
     Plug 'vim-airline/vim-airline'
@@ -77,8 +83,6 @@ call plug#end()
 " Others that look interesting
 """"""""""""""""""""""""""""""
 
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
 " Plug 'gruvbox-community/gruvbox'
 " Plug git@github.com:Valloric/YouCompleteMe.git 
     " cd ~/.vim/plugged/YouCompleteMe && ./install.py

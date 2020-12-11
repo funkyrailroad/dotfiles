@@ -266,3 +266,5 @@ if [ $(pwd) == $HOME ]
 then
     cd Workspace
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
