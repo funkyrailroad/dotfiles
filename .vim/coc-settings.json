@@ -1,3 +1,5 @@
 {
-    "python.formatting.provider": "yapf"
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "~/miniconda3/bin/black",
+    "coc.preferences.formatOnSaveFiletypes": ["python"]
 }
