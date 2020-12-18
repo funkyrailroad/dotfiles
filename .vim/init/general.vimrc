@@ -44,6 +44,9 @@ nnoremap <C-l> <C-w>l
 set splitbelow
 set splitright
 
+" Easy toggle fold
+nnoremap <space> za
+
 " TODO: change path and get this functional
 " append selected text to a collection file
 vnoremap <leader>gd "zy:call writefile(getreg('z',1,1),"/home/stic/.keepers/GTD/capture", "a")<cr>
