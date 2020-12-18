@@ -638,3 +638,6 @@ tmux rename-session [-t session-name] [new-session-name]
 
 # tmux jump between two last windows
 <C-b> l
+
+# vim-coc rename a variable
+<leader>rn
