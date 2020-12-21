@@ -1,5 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
+    " Unit Testing
+    " start test suites in background, errors are parsed automatically
+    Plug 'tpope/vim-dispatch'
+    Plug 'vim-test/vim-test'
+
     " Fuzzy finder
     Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
     Plug 'junegunn/fzf.vim' " needed for previews
@@ -54,8 +59,6 @@ call plug#end()
 " Plug 'vuciv/vim-bujo'  " Bullet journaling
 " Plug 'vimwiki/vimwiki'  " My favorite
 
-" start test suites in background, errors are parsed automatically
-" Plug 'tpope/vim-dispatch'  
 
 " Extended visual block capabilities
 " Plug 'mg979/vim-visual-multi'  
@@ -118,6 +121,7 @@ colorscheme desert
 " colorscheme gruvbox
 " set background=dark
 
+source $HOME/.vim/init/vim-test.vimrc
 source $HOME/.vim/init/general.vimrc
 source $HOME/.vim/init/vim-airline.vimrc
 source $HOME/.vim/init/vim-rainbow.vimrc
