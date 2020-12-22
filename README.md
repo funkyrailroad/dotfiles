@@ -23,3 +23,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 - install better debugger
     pip install pdbpp
+
+# Git
+- install autocompletion (.bashrc will error out if it's not done
+  automatically)

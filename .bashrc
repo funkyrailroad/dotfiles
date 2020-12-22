@@ -191,8 +191,7 @@ fi
 
 
 # GIT STUFF
-source ~/.terminal-config/git-prompt.sh
-source ~/.terminal-config/git-completion.bash
+source /usr/share/bash-completion/completions/git
 
 # Define some colors for the terminal to use
 blue="\[\033[0;34m\]"
