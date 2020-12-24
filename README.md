@@ -9,9 +9,13 @@ symlinks isn't currently forced)
 - install ripgrep
     apt install ripgrep
 
-## Tmux
-- install plugin manager
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+## Git
+- install autocompletion (.bashrc will error out if it's not done
+  automatically)
+
+## Kubernetes
+- bash completion (doesn't work without being sudo user)
+    kubectl completion bash > /etc/bash_completion.d/kubectl
 
 ## Python
 - install miniconda
@@ -28,10 +32,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - install better debugger
     pip install pdbpp
 
-## Git
-- install autocompletion (.bashrc will error out if it's not done
-  automatically)
-
-## Kubernetes
-- bash completion (doesn't work without being sudo user)
-    kubectl completion bash > /etc/bash_completion.d/kubectl
+## Tmux
+- install plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
