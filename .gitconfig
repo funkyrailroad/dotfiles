@@ -20,6 +20,7 @@
     ;l   = log --stat
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     merge   = merge --no-ff
+    ma   = merge --abort
     pull = pull --ff-only
     ; --no-ff and --ff-only option recommendations
     ; https://stackoverflow.com/a/9069127
