@@ -8,6 +8,7 @@
     aa  = add --all
     ap  = add --patch
     b   = branch
+    ba  = branch --all
     cm  = commit --verbose
     cma = commit --amend --verbose
     co  = checkout
@@ -18,7 +19,10 @@
     ds  = diff --staged
     ;l   = log --stat
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    m   = merge
+    merge   = merge --no-ff
+    pull = pull --ff-only
+    ; --no-ff and --ff-only option recommendations
+    ; https://stackoverflow.com/a/9069127
     rb  = rebase
     rba = rebase --abort
     rbc = rebase --continue
